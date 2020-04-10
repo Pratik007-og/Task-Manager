@@ -1,0 +1,17 @@
+<div class="centered-content">
+    <div class="nodal-box">
+        <h1 class="title">
+            Create new List
+        </h1>
+
+        <input #title class="input has-background-light is-medium" type="text" placeholder="New List ...">
+        <br>
+        <br>
+        <div class="buttons is-right">
+            <button class="button" routerLink="/">Cancel</button>
+            <button class="button is-primary has-text-white" 
+                    (click)="createList(title.value)"
+                    >Create</button>
+        </div>
+    </div>
+</div>
